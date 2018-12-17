@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhouqianbin.camera.MainActivity">
+
+     <SurfaceView
+        android:id="@+id/surf_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              >
+
+              <android.support.v7.widget.AppCompatButton
+                  android:id="@+id/btn_take_picture"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="拍照"
+                  />
+              <android.support.v7.widget.AppCompatButton
+                  android:id="@+id/btn_change_camera"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="切换摄像头"
+                  />
+
+              <android.support.v7.widget.AppCompatButton
+                  android:id="@+id/btn_is_support_camera"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="是否支持"
+                  />
+              <android.support.v7.widget.AppCompatButton
+                  android:id="@+id/btn_default_camera"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="默认摄像头"
+                  />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              >
+              <android.support.v7.widget.AppCompatButton
+                  android:id="@+id/btn_turn_on_light"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="开启闪光灯"
+                  />
+              <android.support.v7.widget.AppCompatButton
+                  android:id="@+id/btn_turn_off_light"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="关闭闪光灯"
+                  />
+              <android.support.v7.widget.AppCompatButton
+                  android:id="@+id/btn_start_preview"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="开始预览"
+                  />
+              <android.support.v7.widget.AppCompatButton
+                  android:id="@+id/btn_stop_preview"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="停止预览"
+                  />
+          </LinearLayout>
+      </LinearLayout>
+
+</FrameLayout>
